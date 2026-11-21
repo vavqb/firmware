@@ -193,6 +193,8 @@ jobs:
         with:
           name: Bruce-${{ env.SELECTED_ENV }}
           path: Bruce-*.*
+            .pio/build/*/bootloader.bin
+            .pio/build/*/partitions.bin
           retention-days: 1
           if-no-files-found: error
 
